@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Henry Chang">
+    <meta name="Description" content="This website is created to 
+    help me record my story and growth. Also, Help me to gain 
+    some basic knowledge about web development.">
+    <title>HenryChang</title>
+    <link href="styles/style.css " rel="stylesheet " type="text/css ">
+    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ec0f676735.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <img src="images/logo3.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick="closemenu()"> Home</a></li>
+                    <li><a href="#about" onclick="closeenu()"> About</a></li>
+                    <li><a href="#course" onclick="closemenu()"> Courses</a></li>
+                    <li><a href="#contact" onclick="closemenu()"> Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+
+            </nav>
+            <div class="header-text">
+                <h1>NCKU CCEP</h1>
+                <h2>Hi, I'm <span class="highlight">Henry </span>Chang.</h2>
+            </div>
+            <div></div>
+        </div>
+    </div>
+    <!-- --------------about---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Me.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm Henry. An enterprising explorer with the qualities of perseverance, self-discipline, and prudence. Playing basketball since childhood, I am ingrained with the never-give-up sportsmanship. I'm also an experienced team captain good at delegation and
+                        organization.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class=" tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                        <p class="tab-links " onclick="opentab('skills')">Skills</p>
+
+                    </div>
+
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Summer Intern for Eon Reality AR 
+                                VR projects </span><br>
+                                <ul>
+                                    <li>Assistant operator of the Education Demo Center, operating the hardware/software demo scenarios while the speakers did presentations to the audience </li>
+                                    <li>Tested “Creator AVR” (software product of Eon Reality) and wrote issue log reports</li>
+                                    <li>Applying “Creator AVR” to design AR VR teaching plans, I was trained on how to review the product from users’ perspectives.</li>
+                                </ul>
+                            </li>
+                            <li><span>Community Service: Project leader of Wan-Li elementary school winter Camp </span><br>
+                                <ul>
+                                    <li>Initiated Proposal and Recruited Team Members of 20 people</li>
+                                    <li>Raised sponsorship fund </li>
+                                    <li>Motivated and organized team members to design and rehearse teaching plans</li>
+                                    <li>Discussed, persuaded, and negotiated with School Project Coach and the related administrations to agree with our proposal as the Pandemic put everything on hold</li>
+                                    <li>The proposal was completed and approved but canceled 2 times due to the pandemic situations </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - current </span><br>NCKU Cross College Elite Program Major in CS and EE
+                                <ul>
+                                    <li>Cross College Elite Program students' association</li>
+                                    <li>NCKU Bike Festival Academic Deparment</li>
+                                </ul>
+                            </li>
+                            <li><span>2019 - 2022<br></span>Yan Ping High School
+                                <ul>
+                                    <li>GPA 3.7 (82)</li>
+                                    <li>Academic Excellence Award(Grade 11,12)</li>
+                                    <li>TOEIC Gold Certificate (scores 860)</li>
+                                    <li>Co-captain of the school basketball team</li>
+                                </ul>
+                            </li>
+                            <li><span>2016 - 2019<br></span>Kang Chiao International School
+                                <ul>
+                                    <li>Graduated with High Honor, 1st Ranked Academic Achievement from Kang Chiao 2019</li>
+                                    <li>Summer English School (July-Aug, 2018), Cambridge University, UK </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="skills">
+                        <ul>
+                            <li><span>C Programming Language</span><br>NCKU Programming Design(1) Scores:A-</li>
+                            <li><span>Basic Web Develope</span><br>Personal Portfolio Project <br>Using HTML CSS JS</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------courses----------------------->
+    <div id="course">
+        <div class="container">
+            <h1 class="sub-title">Taken Courses</h1>
+            <div class="courses-list">
+                <div>
+                    <i class="fa-solid fa-seedling"></i>
+                    <h2>Science</h2>
+                    <p>Calculus(1)&(2)<br><span>Department: Electrical Engineering</span></p>
+                    <p>Genreral Physics(1)&(2)<br><span> Department: Electrical Engineering</span></p>
+                    <p>Physics Laboratory(1)&(2)<br><span>Department: Electrical Engineering</span></p>
+                    <p>Linear Algebra<br><span>Deparment: Electrical Engineering</span></p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Computer Science</h2>
+                    <p>Programming Design(1)&(2)<br><span>Department: Computer Science</span></p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-bolt"></i>
+                    <h2>Electrical Engineering</h2>
+                    <p> Electrical Engineering Laboratory<br><span>Department: Electrical Engineering</span></p>
+
+                </div>
+                <div>
+                    <i class="fa-solid fa-comments"></i>
+                    <h2>others</h2>
+                    <p>Transdisciplinary Problem Based Seminar - Basic<br><span>Deparment: Cross College Elite Program</span></p>
+                    <p>Narratives With High-Order Thinking<br><span>Deparment: Foreign Language</span></p>
+                    <p>College Chinese - Modern Literature<br><span>Deparment: General Chinese CL</span></p>
+                    <p>Career Development – Elite Forum<br><span>Department:Courses of General Education</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------contact---------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>henry930619@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0905818475</p>
+                    <p> <i class="fa-brands fa-line"></i>henry930619</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100006015376476"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/hung.6_19/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/%E7%99%BE%E9%B4%BB-%E5%BC%B5-345360261/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/HenryChang6"><i class="fa-brands fa-github"></i></a>
+                        <p>test</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/rwd.js"></script>
+</body>
+
+</html>
